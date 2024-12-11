@@ -1,0 +1,167 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 4%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  color: white;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.4),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.nav__black {
+  background-color: rgba(20, 20, 20, 0.99);
+  color: white;
+}
+
+.nav__left {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add space between items */
+}
+
+.nav__logo {
+  height: 102px;
+  object-fit: contain;
+  padding-right: 20px;
+}
+
+.nav__avatar {
+  height: 35px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.nav__left,
+.nav__right > p {
+  font-size: 14px;
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 0.1;
+  gap: 15px;
+}
+
+.nav__input {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid white;
+  background-color: rgba(20, 20, 20, 0.99);
+  padding: 2px 5px;
+  box-sizing: border-box;
+  float: right;
+}
+
+.nav__input > input {
+  border: none;
+  background: transparent;
+  color: white;
+  outline: none;
+  font-size: 15px;
+  width: 250px;
+  padding: 5px;
+}
+
+.not__active {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.nav__input > input::placeholder {
+  color: white;
+}
+
+.wrapper {
+  width: 200px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .nav__logo {
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .nav {
+    height: 40px;
+  }
+  .nav__logo {
+    height: 75px;
+  }
+  .nav__left,
+  .nav__right > p {
+    font-size: 10px;
+  }
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 540px) {
+  .nav {
+    padding: 0px 1%;
+  }
+  .nav__right {
+    gap: 2px;
+  }
+  .logo-container {
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  .wrapper {
+    width: 120px;
+  }
+  .nav__input > input {
+    width: 120px;
+    padding: 0px !important;
+    font-size: 12px;
+  }
+  .nav__input {
+    padding: 0px;
+  }
+}
+
+.browse-text {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 344px) {
+  .nav {
+    padding: 0px 1%;
+  }
+  .nav__right {
+    gap: 2px;
+  }
+  .logo-container {
+    justify-content: flex-start;
+    gap: 5px;
+  }
+  .wrapper {
+    width: 100px;
+  }
+  .nav__input > input {
+    width: 100px;
+    padding: 0px !important;
+    font-size: 12px;
+  }
+  .nav__input {
+    padding: 0px;
+  }
+}

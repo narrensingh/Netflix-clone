@@ -1,0 +1,84 @@
+.login {
+  height: 100vh;
+  background-image: url('https://analyticsindiamag.com/wp-content/uploads/2019/05/apps.55787.9007199266246365.687a10a8-4c4a-4a47-8ec5-a95f70d8852d.jpg');
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: center center;
+}
+
+.login__background {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 4%;
+  width: 100%;
+}
+
+.login__logo {
+  height: 120px;
+}
+
+.signIn__btn {
+  background-color: #e50815;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login__content {
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 60%;
+  text-align: center;
+  width: 60%;
+}
+
+.login__Cheader {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.login__CSheader {
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+.login__CSSheader {
+  font-size: 20px;
+}
+
+.login__input {
+  margin-top: 30px;
+  display: flex;
+  align-items: stretch;
+}
+
+.login__input > input {
+  outline: none;
+  border: none;
+  padding: 15px;
+  font-size: 15px;
+  width: 300px;
+}
+
+.login__input > button {
+  border: none;
+  outline: none;
+  padding: 0px 10px;
+  color: white;
+  background-color: #e50815;
+  font-weight: 600;
+  cursor: pointer;
+}

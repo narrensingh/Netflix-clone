@@ -1,0 +1,121 @@
+.profile__nav {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  align-items: center;
+}
+
+.profile {
+  padding: 0px 4%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  margin: auto;
+  position: relative;
+}
+
+.logo {
+  height: 100px;
+}
+
+.profile__pic {
+  height: 35px;
+  border-radius: 5px;
+}
+
+.profile__conatiner {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.profile__email {
+  padding: 10px;
+  background-color: grey;
+  font-weight: 600;
+}
+
+.profile__planHeader {
+  font-size: 20px;
+}
+
+.profile__renewalDate {
+  color: rgb(142, 142, 142);
+}
+
+.profile__plans {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__plan {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.profile__signout {
+  width: 100%;
+  border: none;
+  padding: 10px 15px;
+}
+
+.profile__main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 60%;
+}
+
+.profile__conatiner {
+  border-top: 2px solid gray;
+  padding: 20px 0px;
+}
+
+.profile__edit {
+  padding: 10px 0px;
+}
+
+.profile__picC {
+  height: 100px;
+}
+
+.profile__planHeader {
+  padding: 10px 0px;
+  margin: 15px 0px;
+  border-bottom: 2px solid grey;
+}
+
+.profile__contents {
+  flex: 1;
+}
+
+button {
+  cursor: pointer;
+}
+
+.profile__plan > button {
+  background-color: #e50815;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.profile__signout {
+  background-color: #e50815;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: grey !important;
+}
